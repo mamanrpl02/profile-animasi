@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+body{ 
+  width: 100%;
+  max-width: 1280;
+  margin: 0 auto ;
+  padding: 0 25px;
+}
+.hero-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+}
+.blob{
+  background-image: url('profil-manz.jpg');
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  margin: 20px;
+  border: 3px solid #aaaffd;
+  animation: animte 5s ease-in-out infinite;
+  transition:all 1s ease-in-out;
+}
+
+@keyframes animte {
+  0%,100% {
+    border-radius: 60% 40% 30% 70% /  60% 30% 70% 40%;
+  }
+  50%{
+    border-radius: 30% 60% 70% 40% /  50% 60% 30% 60%;
+  }
+}
